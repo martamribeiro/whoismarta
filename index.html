@@ -1,26 +1,52 @@
-<style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Título</title>
+    <style>
+        body {
+            background-color: white;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        }
 
-    body{
-        background-color: white;
-        height: 100%;
-        width: 100%;
-        margin: 0;
-    }
+        canvas {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            margin: auto;
+        }
 
-    canvas{
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        right: 0px;
-        bottom: 0px;
-        margin: auto;
-        /*border:2px solid black";*/
-    }
+        a#linkedin-link {
+            position: absolute;
+            width: 48px;
+            height: 48px;
+        }
+        
+    </style>
+</head>
+<body>
+    <canvas></canvas>
+    <a id="linkedin-link" href="https://www.linkedin.com/in/martaribeiro/" target="_blank">
+        <img src="./img/linkedin.png" alt="LinkedIn" style="width: 100%; height: 100%; cursor: pointer;">
+    </a>
+    <script>
+        const linkedinLink = document.getElementById('linkedin-link');
+        const centerX = window.innerWidth / 2;
+        const centerY = window.innerHeight / 2;
+        const topOffset = centerY + 240;
+        const leftOffset = centerX + 464;
 
-</style>
-
-<canvas></canvas>
-<script src="data/collisions.js"></script>
-<script src="data/teleportZones.js"></script>
-<script src="classes.js"></script>
-<script src="index.js"></script>
+        linkedinLink.style.top = `${topOffset}px`;
+        linkedinLink.style.left = `${leftOffset}px`;
+    </script>
+    <script src="data/collisions.js"></script>
+    <script src="data/teleportZones.js"></script>
+    <script src="classes.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

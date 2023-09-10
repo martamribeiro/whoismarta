@@ -3,7 +3,6 @@ const c = canvas.getContext('2d')
 
 canvas.width = 1024
 canvas.height = 576
-//canvas.style = "position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; margin: auto; border:2px solid black";
 
 const collisionsMap = []
 for (let i = 0; i < collisions.length; i+=90){
@@ -177,10 +176,10 @@ const keys = {
     d: {
         pressed: false
     },
-    arrowUp: { pressed: false },    // Adicionando seta para cima
-    arrowLeft: { pressed: false },  // Adicionando seta para a esquerda
-    arrowDown: { pressed: false },  // Adicionando seta para baixo
-    arrowRight: { pressed: false }, // Adicionando seta para a direita
+    arrowUp: { pressed: false },
+    arrowLeft: { pressed: false },
+    arrowDown: { pressed: false },
+    arrowRight: { pressed: false },
     space: {
         pressed: false
     }
@@ -338,7 +337,6 @@ function animate(){
                 })
 
             ){
-                //change to house 1
                 c.drawImage(house1Image,0,0,1024,576)
                 break
             }
@@ -357,7 +355,6 @@ function animate(){
                     }
                 })
             ){
-                //change to house 2
                 c.drawImage(house2Image,0,0,1024,576)
                 break
             }
@@ -376,7 +373,6 @@ function animate(){
                     }
                 })
             ){
-                //change to house 3
                 c.drawImage(house3Image,0,0,1024,576)
                 break
             }
@@ -395,7 +391,6 @@ function animate(){
                     }
                 })
             ){
-                //change to house 4
                 c.drawImage(house4Image,0,0,1024,576)
                 break
             }
@@ -414,7 +409,6 @@ function animate(){
                     }
                 })
             ){
-                //change to house 5
                 c.drawImage(house5Image,0,0,1024,576)
                 break
             }
