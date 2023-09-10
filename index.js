@@ -201,8 +201,12 @@ function rectangularCollision({rectangle1, rectangle2}){
 let clicked = false
 let instructed = false
 
+const fps = 100;
+
 function animate(){
-    window.requestAnimationFrame(animate)
+    setTimeout(() => {
+        window.requestAnimationFrame(animate)
+    }, 1000 / fps);
     c.drawImage(instructionsImage,0,0,1024,576)
     if(clicked){
     background.draw()
