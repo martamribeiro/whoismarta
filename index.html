@@ -21,16 +21,12 @@
             margin: auto;
         }
 
-        #linkedin-link {
-            position: absolute;
-            width: 36px;
-            height: 36px;
-        }
-
+        #linkedin-link,
         #youtube-link {
             position: absolute;
             width: 36px;
             height: 36px;
+            cursor: pointer;
         }
         
     </style>
@@ -46,12 +42,16 @@
     <script>
         const linkedinLink = document.getElementById('linkedin-link');
         const youtubeLink = document.getElementById('youtube-link');
-        const centerX = window.innerWidth / 2;
+        /*const centerX = window.innerWidth / 2;
         const centerY = window.innerHeight / 2;
         const topOffsetLinkedin = centerY + 252;
         const leftOffsetLinkedin = centerX + 476;
         const topOffsetYoutube = centerY + 252;
-        const leftOffsetYoutube = centerX + 436;
+        const leftOffsetYoutube = centerX + 436;*/
+        const topOffsetLinkedin = 10;
+        const leftOffsetLinkedin = 56;
+        const topOffsetYoutube = 10;
+        const leftOffsetYoutube = 10;
         linkedinLink.style.top = `${topOffsetLinkedin}px`;
         linkedinLink.style.left = `${leftOffsetLinkedin}px`;
         youtubeLink.style.top = `${topOffsetYoutube}px`;
